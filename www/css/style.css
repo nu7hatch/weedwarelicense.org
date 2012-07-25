@@ -1,0 +1,70 @@
+body {
+   background: #6d904d;
+   color: #32491d;
+   padding: 1em;
+}
+
+.container {
+   width: 640px;
+   margin: 0 auto;
+}
+
+a, a:visited {
+   color: #32491d;
+   text-decortation: underline;
+}
+a:hover, a:active {
+   text-decoration: none;
+   color: rgba(255,255,255,.5);
+}
+
+[role='main'] .leaf {
+   margin-top: 2em;
+   margin-bottom: 1em;
+   height: 350px;
+   background: url(/img/leaf.png) top center no-repeat;
+}
+[role='main'] .license {
+   background: rgba(255,255,255,.1);
+   padding: 1em;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   padding-bottom: 1px;
+   margin-bottom: 4em;
+}
+[role='main'] .license h1 {
+   font-family: Anton, sans-serif;
+   font-size: 2em;
+   text-transform: uppercase;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+}
+[role='main'] .license h1 small {
+   opacity: 0.5;
+}
+[role='main'] .license p {
+   font-family: 'Droid Sans Mono', 'Bitstream Vera Sans Mono', Monospace;
+   padding: 0;
+   margin: 1em 0;
+   font-size: 1em;
+}
+
+[role='contentinfo'] {
+   font-family: 'Droid Sans', sans-serif;
+   text-align: center;
+   font-size: .8em;
+}
+
+@media screen and (max-width: 680px) {
+   .container {
+      width: 100%;
+   }
+   [role='main'] .leaf {
+      background-size: 300px;
+      height: 300px;
+   }
+}
